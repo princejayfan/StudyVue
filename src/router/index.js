@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Login from '../components/access/login';
+import Login from '../components/access/login.vue';
 import Home from '../components/home';//主页
 import NotFound from '../components/NotFound';//404
 
 Vue.use(Router)
 const vueRouter = new Router({
+  mode:'history',
   routes:[
     {
       path:'/',
@@ -19,7 +20,7 @@ const vueRouter = new Router({
     {
       path:'/home',
       name:'home',
-      compinent:Home,
+      component:Home,
     },
     {
       path: '*', //404

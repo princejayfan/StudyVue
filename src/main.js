@@ -7,8 +7,10 @@ import App from './App.vue';
 
 
 Vue.use(ElementUI);
+Vue.use(router);
 new Vue({
   el: '#app',
   router,
-  render: h => h(App)
+  components: {App},
+  template: '<App/>'
 })
