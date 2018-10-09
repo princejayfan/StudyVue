@@ -12,5 +12,11 @@ export default {
 </script>
 
 <style>
-
+  html, body, #app {
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    margin: 0px;
+  }
 </style>
