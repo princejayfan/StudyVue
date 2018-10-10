@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <div class="card-container">
-      <div class="logo-container">
+      <div class="card-container-logo">
         <img src="/static/logo.png" alt="">
         <h1>
           干部监督系统
         </h1>
       </div>
-      <div class="login-container">
+      <div class="card-container-login">
         <h1>
           登录
         </h1>
@@ -37,7 +37,6 @@
     height: 100%;
     background: url("/static/loginBg.png") no-repeat center center;
     background-size: cover;
-    border: 0px;
     .card-container {
       width: 700px;
       height: 400px;
@@ -49,9 +48,18 @@
       left: 25%;
       display: grid;
       grid-template-columns: 350px 350px;
-      grid-template-rows: 400px;
-      .logo-container {
-        position: absolute;
+      grid-template-rows: 300px;
+      align-content: center;
+      justify-items: center;
+      .card-container-logo {
+        position: relative;
+        border-right: 3px solid rgba(0, 0, 0, .03);
+        width: 100%;
+      }
+      .card-container-login{
+        > h1 {
+          text-align: center;
+        }
       }
     }
   }
