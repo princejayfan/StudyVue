@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Login from '../components/access/login.vue';
 import Home from '../components/home';//主页
+import HomeMenu from '../components/home/homeMenu';
 import NotFound from '../components/NotFound';//404
 
 Vue.use(Router)
@@ -21,6 +22,11 @@ const vueRouter = new Router({
       path:'/home',
       name:'home',
       component:Home,
+    },
+    {
+      path:'/homeMenu',
+      name:'homeMenu',
+      component:HomeMenu,
     },
     {
       path: '*', //404
