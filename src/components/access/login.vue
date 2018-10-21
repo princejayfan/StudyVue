@@ -27,7 +27,7 @@
           <el-checkbox>记住密码</el-checkbox>
         </div>
         <div class="lgoinBtn">
-          <el-button>登录</el-button>
+          <el-button @click="Login">登录</el-button>
         </div>
       </div>
     </div>
@@ -38,7 +38,13 @@
 
 <script>
   export default {
-    name: "login"
+    methods:{
+      Login(){
+        let that = this;
+        that.$message.success("登录成功");
+        that.$router.push('/homeMenu')
+      }
+    }
 
   }
 </script>
