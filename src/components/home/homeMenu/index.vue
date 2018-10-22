@@ -11,7 +11,7 @@
         <i class="iconfont icon-shouye"></i>
         <span>首页</span>
       </div>
-      <div>
+      <div class="header-login">
         <img src="/static/touxiang.jpg" height="205" width="213"/>
         <span>admin</span>
       </div>
@@ -54,12 +54,32 @@
       .iconfont{
         color:rgba(255,255,255,1);
         font-size: 25px;
+        position: relative;
+        top:2px;
       }
     }
     .header-menu{
       width: 20%;
       font-size: 18px;
       color: rgba(255,255,255,1);
+      padding: 8px 0px 0px 8px;
+    }
+    .header-login{
+
+      width:65%;
+      color: azure;
+      padding-top: 5px;
+      >img{
+        width: 30px;
+        height: 30px;
+        float:right;
+        position: relative;
+        right:10%;
+      }
+      >span{
+        float:right;
+        padding-top: 5px;
+      }
     }
 
   }
