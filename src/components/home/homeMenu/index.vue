@@ -18,12 +18,12 @@
     </div>
     <div class="top">
       11
-    </div>
     <div class="todo-container">
-      11
+      22
+    </div>
     </div>
     <div class="menu-container">
-      11
+      33
     </div>
   </div>
 </template>
@@ -35,7 +35,11 @@
 </script>
 
 <style type="text/scss" lang="scss">
-  .header{
+  .container{
+    background-color: #eaeaf1;
+    overflow: hidden;
+
+    .header{
     background-color: #198FFF;
     height: 40px;
     width: 100%;
@@ -83,5 +87,19 @@
     }
 
   }
-
+    .top{
+      width: 30%;
+      height: 700px;
+      background-color: white;
+      margin:5px 0px 0px 5px;
+      float:left;
+    }
+    .menu-container{
+      width: 69%;
+      height: 700px;
+      background-color: white;
+      margin:5px 5px 0px 0px;
+      float:right;
+    }
+  }
 </style>
