@@ -38,6 +38,7 @@
 
 <script>
   export default {
+    name: "login",
     methods:{
       Login(){
         let that = this;
