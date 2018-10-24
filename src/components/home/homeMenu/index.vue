@@ -22,12 +22,15 @@
         <span class="top-login-info">早安，宋开志部长</span>
         <span class="top-login-org">市委组织部</span>
       </div>
-
       <div class="todo-container">
         <div class="todo-logo"></div>
         <span class="todo-name">代办事项</span>
         <span class="todo-more">更多</span>
-
+      </div>
+      <div class="todo-list">
+        <div class="todo-list-logo"></div>
+        <span class="todo-list-message">请各单位尽快完成成绩补录的消息</span>
+        <span class="todo-list-date">5-22</span>
       </div>
     </div>
     <div class="menu-container">
@@ -143,6 +146,25 @@
       .todo-name{
         margin-left: 5px;
         margin-right: 70%;
+      }
+    }
+    .todo-list{
+      margin: 15px 0px 15px 0px;
+      display: flex;
+      .todo-list-logo{
+        margin-left: 15px;
+        margin-top: 3px;
+        height:15px;
+        width: 15px;
+        background-color: #eaeaf1;
+        border-radius: 50px;
+      }
+      .todo-list-date{
+        padding-left: 80px;
+      }
+      .todo-list-message{
+        padding-left: 10px;
+        width: 200px;
       }
     }
 
