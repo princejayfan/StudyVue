@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="home-container">
     <div class="header">
       <div class="header-name">
         <i class="iconfont icon-building"></i>
@@ -12,8 +12,8 @@
         <span>首页</span>
       </div>
       <div class="header-login">
-        <img src="/static/photo.jpg" height="205" width="213"/>
         <span>admin</span>
+        <img src="/static/photo.jpg" height="205" width="213"/>
       </div>
     </div>
     <div class="top">
@@ -49,7 +49,7 @@
 </script>
 
 <style type="text/scss" lang="scss">
-  .container {
+  .home-container {
     background-color: #eaeaf1;
     overflow: hidden;
     .header {
@@ -86,17 +86,16 @@
         width: 65%;
         color: azure;
         padding-top: 5px;
+        > span {
+          float: right;
+          padding: 5px 10px 0px 10px;
+        }
         > img {
           width: 30px;
           height: 30px;
           float: right;
-          position: relative;
-          right: 10%;
         }
-        > span {
-          float: right;
-          padding-top: 5px;
-        }
+
       }
 
     }
